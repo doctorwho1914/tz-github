@@ -1,0 +1,12 @@
+<h2>Repositories:</h2>
+___________________
+<br>
+<% for(var i = 0; i < user.repos.length; i++) { %>
+<p>
+    <a href="<%= user.repos[i].html_url %>" target="_blank"><%= user.repos[i].name %></a>
+</p>
+<% } %>
+
+<p style="margin-top: 50px">
+    <a href="/logout">Logout</a>
+</p>
